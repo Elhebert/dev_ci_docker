@@ -13,7 +13,7 @@ inspired by [Maxfield F Stewart tutorials](http://engineering.riotgames.com/news
 
 ### Usage
 
-> Makefile not working atm. But when it'll use the following commands
+> Makefile not working atm. But when it'll do, use the following commands
 
 - `make build`: build containers
 - `make run`: run containers
