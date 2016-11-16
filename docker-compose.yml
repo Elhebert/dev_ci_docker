@@ -1,0 +1,34 @@
+version: '2'
+
+services:
+  # TYRAEL (Archangel of Justice): Data container
+  tyrael:
+    build: data
+    container_name: tyrael
+
+  # IMPERIUS (Archangel of Valor): Master container
+  imperius:
+    build: master
+    volumes_from:
+      - tyrael
+    ports:
+      - "50000:50000"
+    container_name: imperius
+
+  # ITHERAEL (Archangel of Fate): Gitlab container
+  itherael:
+    build: gitlab
+    volumes_from:
+      - tyrael
+    container_name: itherael
+
+  # AURIEL (Archangel of Hope): Nginx container
+  auriel:
+    build: nginx
+    ports:
+      - "80:80"
+      - "8010:8010"
+    links:
+      - imperius:imperius
+      - itherael:itherael
+    container_name: auriel
