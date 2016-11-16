@@ -31,5 +31,5 @@ inspired by [Maxfield F Stewart tutorials](http://engineering.riotgames.com/news
 
 ### TODO:
 
-- [] Fix makefile (`$(<cli>)` are not interpreted or ommited)
-- [] Fix proxy (all request ports are redirected to :80)
+- [ ] Fix makefile (`$(<cli>)` are not interpreted or ommited)
+- [ ] Fix proxy (all request ports are redirected to :80)
