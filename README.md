@@ -21,7 +21,7 @@ inspired by [Maxfield F Stewart tutorials](http://engineering.riotgames.com/news
 - `make clean`: stop containers and remove all but data
 - `make clean-data`: remove data container
 - `make clean-images`: remove all docker images
-- `make bacup-data`: backup all the data into data/
+- `make backup-data`: backup all the data into data/
 - `make restore-data`: restore backed up data
 
 ### Access
