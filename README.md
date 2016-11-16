@@ -33,3 +33,4 @@ inspired by [Maxfield F Stewart tutorials](http://engineering.riotgames.com/news
 
 - [ ] Fix makefile (`$(<cli>)` are not interpreted or ommited)
 - [ ] Fix proxy (all request ports are redirected to :80)
+- [ ] Fix backup restoration path (folder is untar inside itself instead of merging with itself)
