@@ -26,6 +26,8 @@ inspired by [Maxfield F Stewart tutorials](http://engineering.riotgames.com/news
 
 ### Access
 
+> I'm not happy with this solution, I would really prefer to play with different ports instead of forcing the use of a pre-defined hostname. If you have a solutoin, don't hesitate.
+
 First, you need to add the following redirection into your host file:
 
 ```bash
@@ -42,4 +44,5 @@ Then simply access the diffent services with the corresponding url:
 
 - [ ] Fix makefile (`$(<cli>)` are not interpreted or ommited)
 - [x] Fix proxy (all requested ports are redirected to :80)
-- [ ] Fix backup restoration path (folder is untar inside itself instead of merging with itself)
+- [x] Fix backup restoration path (folder is untar inside itself instead of merging with itself)
+- [ ] Use ports (on 127.0.0.1) to identify the different applications instead of different DN.
