@@ -25,6 +25,6 @@ backup-data:
 	@docker run --rm --volumes-from=tyrael -v $(PWD)/data:/backup debian tar cvf /backup/gitlab-appdata.tar /var/opt/gitlab
 
 restore-data:
-	@docker run --rm --volumes-from=tyrael -v $(PWD)/data:/backup debian bash -c "cd /var/jenkins_home && tar xvf /backup/jenkins-home.tar --strip 1"
-	@docker run --rm --volumes-from=tyrael -v $(PWD)/data:/backup debian bash -c "cd /var/opt/gitlab && tar xvf /backup/gitlab-appdata.tar --strip 1"
-	@docker run --rm --volumes-from=tyrael -v $(PWD)/data:/backup debian bash -c "cd /etc/gitlab && tar xvf /backup/gitlab-conf.tar --strip 1"
+	@docker run --rm --volumes-from=tyrael -v $(PWD)/data:/backup debian bash -c "cd /var/jenkins_home && tar xvf /backup/jenkins-home.tar --strip-components 1"
+	@docker run --rm --volumes-from=tyrael -v $(PWD)/data:/backup debian bash -c "cd /var/opt/gitlab && tar xvf /backup/gitlab-appdata.tar --strip-components 1"
+	@docker run --rm --volumes-from=tyrael -v $(PWD)/data:/backup debian bash -c "cd /etc/gitlab && tar xvf /backup/gitlab-conf.tar --strip-components 1"
