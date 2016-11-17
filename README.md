@@ -26,8 +26,8 @@ inspired by [Maxfield F Stewart tutorials](http://engineering.riotgames.com/news
 
 ### Access
 
-- `localhost:80`: jenkins
-- `localhost:8010`: gitlab
+- `localhost:8010`: jenkins
+- `localhost:80`: gitlab
 
 ### TODO:
 
