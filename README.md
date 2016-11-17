@@ -6,7 +6,7 @@ inspired by [Maxfield F Stewart tutorials](http://engineering.riotgames.com/news
 
 ### Containers
 
-- **Tyrael**: data container
+- **tyrael**: data container
 - **imperius**: jenkins container
 - **itherael**: gitlab container
 - **auriel**: nginx container (proxy)
