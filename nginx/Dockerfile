@@ -13,6 +13,5 @@ COPY conf/gitlab.conf /etc/nginx/conf.d/gitlab.conf
 COPY conf/nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80
-EXPOSE 8010
 
 CMD ["nginx"]

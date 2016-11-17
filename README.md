@@ -26,8 +26,17 @@ inspired by [Maxfield F Stewart tutorials](http://engineering.riotgames.com/news
 
 ### Access
 
-- `localhost:8010`: jenkins
-- `localhost:80`: gitlab
+First, you need to add the following redirection into your host file:
+
+```bash
+127.0.0.1	imperius.archangel
+127.0.0.1	itherael.archangel
+```
+
+Then simply access the diffent services with the corresponding url:
+
+- `imperius.archangel/`: jenkins
+- `itherael.archangel/`: gitlab
 
 ### TODO:
 
